@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="greet">Welcome to my saved photos</h1>
+    <img src="assets/carrie.jpg" alt="Carrie" id="piece">
+    <button class="previous" onclick="prevPhoto()">Previous</button>
+    <button class="next" onclick="nextPhoto()">Next</button>
+    <script>
+        function myComment() {
+            console.log('Я учу JavaScript!');
+        }
+        myComment()
+        function nextPhoto() {
+            let image = document.getElementById('piece')
+            image.src='assets/gabi.jpg'
+        }
+        function prevPhoto() {
+            let image = document.getElementById('piece')
+            image.src='assets/carrie.jpg'
+        }
+    </script>
+</body>
+</html>
