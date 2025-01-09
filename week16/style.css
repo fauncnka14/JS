@@ -1,0 +1,32 @@
+.error {
+    display: none;
+    color: red;
+}
+body {
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque
+}
+.form-container {
+    background-color: wheat;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 1px 1px black;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, select {
+    height: 1.5rem;
+    font-size: large;
+}
+
+#woman, #man, #checkbox {
+    width: 3rem;
+    margin-top: 1rem;
+}

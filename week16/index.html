@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>week 16 form</title>
+</head>
+<body>
+    <h1>My form practice</h1>
+    <div class="form-container">
+        <form action="" name="myForm">
+            <input type="text" class="input-field" name="name" placeholder="Введите имя" pattern="^[А-Яа-я ]{2,20}+$" required />
+            <span class="error" id="nameError">Введите имя!</span>
+            <input type="email" class="input-field" name="email" placeholder="Введите электронную почту" required />
+            <span class="error" id="emailError"></span>
+            <input type="number" class="input-field" name="age" placeholder="Введите возраст" required min="1"/>
+            <span class="error" id="ageError">Введите возраст!</span>
+            <fieldset>
+                <legend>Выберите пол</legend>
+                <input type="radio" name="pole" id="woman" value="Woman">Женщина
+                <input type="radio" name="pole" id="man" value="man">Мужчина
+            </fieldset>
+            <select name="profession" id="prof" placeholder="Выберите профессию">
+                <option value="0">Choose:</option>
+                <option value="1">Врач</option>
+                <option value="2">Программист</option>
+                <option value="3">Учитель</option>
+                <option value="4">Дизайнер</option>
+                <option value="5">Инженер</option>
+                <option value="6">Продавец</option>
+                <option value="7">Другое</option>
+            </select>
+            <input type="password" class="input-field" name="password" id="password" placeholder="Введите пароль" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,20}+$" required />
+            <span class="error" id="passwordError">Пароль должен быть не менее 8 символов, содержать как минимум 1 заглавную букву, 1 строчную букву и цифру</span>
+            <fieldset>
+                <input type="checkbox" name="agreeTerms" id="checkbox"/> Согласен на обработку персональных данных
+            </fieldset>
+            <button type="submit" id="submitBtn" disabled>Отправить</button>
+        </form>
+    </div>
+    <script src="task2.js"></script>
+</body>
+</html>
